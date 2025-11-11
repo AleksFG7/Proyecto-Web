@@ -28,9 +28,9 @@ header{
 .elementosheader a:visited,
 .elementosheader a:hover,
 .elementosheader a:active {
-  text-decoration: none;  
-  color: white;        
-  font-size: 18px; 
+    text-decoration: none;  
+    color: black;        
+    font-size: 18px; 
 }
 
 body{
