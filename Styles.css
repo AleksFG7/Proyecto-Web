@@ -1,0 +1,38 @@
+header{
+    position: fixed;     
+    top: 0;               
+    left: 0;              
+    width: 100%;
+    height: 50px;   
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding: 0;   
+    background-color:#F2F2F2;  
+    color: white;         
+    padding: 15px;
+    text-align: center;
+    z-index: 1000; 
+    align-items: center;    
+}
+
+.elementosheader{
+    list-style: none;
+    display:inline-flex;
+    gap: 20px;
+    font-family: fantasy;
+}
+
+.elementosheader a,
+.elementosheader a:link,
+.elementosheader a:visited,
+.elementosheader a:hover,
+.elementosheader a:active {
+  text-decoration: none;  
+  color: white;        
+  font-size: 18px; 
+}
+
+body{
+    background-color: #FFFFFFFF;
+}
