@@ -124,3 +124,441 @@ body {
     margin: 10px 0;
     font-family: sans-serif;
 }
+
+/* -------- Logo AURA Tours -------- */
+.logo {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px; /* ajusta según el tamaño de tu logo */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* -------- Página de concierto -------- */
+.concierto-detalle {
+    max-width: 800px;
+    margin: 120px auto 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-concierto {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.concierto-detalle h1 {
+    margin-top: 25px;
+    font-size: 2.2rem;
+    color: #222;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 20px 0;
+    color: #555;
+}
+
+.detalles {
+    font-size: 1rem;
+    color: #333;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.boton-reservar {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.boton-reservar:hover {
+    background-color: #0070a6;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    color: #555;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+
+/* -------- Modo oscuro para AURA Tours -------- */
+
+body {
+    background-color: #000;  /* Fondo negro */
+    color: #fff;             /* Texto blanco */
+}
+
+/* Header oscuro */
+header {
+    background-color: #000;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+.elementosheader a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.elementosheader a:hover {
+    color: #00bfff; /* Azul claro al pasar el cursor */
+}
+
+/* Logo más grande */
+.logo img {
+    height: 70px; /* antes 45px */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+/* Menú desplegable */
+.menu-desplegable {
+    background-color: #111;
+    border: 1px solid #333;
+}
+
+.menu-desplegable a {
+    color: #fff;
+}
+
+.menu-desplegable a:hover {
+    background-color: #222;
+}
+
+/* Galería de conciertos */
+.galeria {
+    background-color: #000;
+}
+
+.tarjeta {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #222;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,255,255,0.1);
+}
+
+.tarjeta h3 {
+    color: #fff;
+}
+
+/* Página individual de concierto */
+.concierto-detalle {
+    background-color: #000;
+    color: #fff;
+}
+
+.img-concierto {
+    box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+}
+
+.detalles {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.boton-reservar {
+    background-color: #00bfff;
+    color: #000;
+}
+
+
+.boton-reservar:hover {
+    background-color: #00a2d6;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+}
+
+/* -------- Títulos de los conciertos -------- */
+.concierto-detalle h1 {
+    font-size: 3rem;        /* tamaño más grande */
+    color: #fff;            /* texto blanco */
+    font-weight: 700;       /* más grueso */
+    letter-spacing: 1px;    /* ligera separación entre letras */
+    text-transform: uppercase; /* todo en mayúsculas (opcional) */
+    margin-top: 30px;
+}
+
+/* -------- Estilo general blanco -------- */
+body, 
+.concierto-detalle, 
+.concierto-detalle p, 
+.concierto-detalle h2, 
+.concierto-detalle h3, 
+.concierto-detalle .detalles p, 
+footer, 
+header, 
+.elementosheader a, 
+.menu-desplegable a {
+    color: #fff !important;
+}
+
+/* -------- Título principal con brillo -------- */
+.concierto-detalle h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-shadow: 0 0 8px #00bfff, 0 0 20px #00bfff, 0 0 40px #0088cc;
+    transition: text-shadow 0.3s ease;
+}
+
+.concierto-detalle h1:hover {
+    text-shadow: 0 0 12px #00ffff, 0 0 30px #00bfff, 0 0 60px #00aaff;
+}
+
+/* -------- Descripción y texto -------- */
+.descripcion, 
+.detalles, 
+footer {
+    color: #fff;
+}
+
+/* -------- Botón de reservar -------- */
+.boton-reservar {
+    background-color: #00bfff;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0,191,255,0.5);
+}
+
+.boton-reservar:hover {
+    background-color: #00a2d6;
+    box-shadow: 0 0 20px rgba(0,191,255,0.8);
+}
+/* -------- HERO PRINCIPAL -------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url('imagenes/concierto.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px #c3ff00, 0 0 40px #c5cc00;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #00bfff;
+    color: #000;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0,191,255,0.6);
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #009ad8;
+    box-shadow: 0 0 30px rgba(0,191,255,0.9);
+}
+
+/* Título de sección */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+    color: #fff;
+}
+/* -------- Estilo especial para el DTMF Tour -------- */
+.titulo-dtmf {
+    color: #ffd700; /* dorado */
+    text-shadow: 0 0 15px #ffd700, 0 0 35px #ffcc00, 0 0 55px #ffaa00;
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-dtmf:hover {
+    text-shadow: 0 0 25px #ffee58, 0 0 45px #ffca28, 0 0 80px #ffa000;
+}
+
+/* Acentos dorados en botón */
+.boton-reservar {
+    background-color: #ffd700;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.boton-reservar:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+}
+/* -------- Sección frase Bad Bunny -------- */
+.frase-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.frase-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.frase-imagen img {
+    width: 420px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.frase-imagen img:hover {
+    transform: scale(1.05);
+}
+
+.frase-texto {
+    background-color: #111;
+    border-radius: 16px;
+    padding: 30px 40px;
+    max-width: 420px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.1);
+}
+
+.frase-texto p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #ffd700;
+    text-align: center;
+}
+
+/* Adaptable a pantallas pequeñas */
+@media (max-width: 768px) {
+    .frase-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frase-imagen img {
+        width: 80%;
+    }
+
+    .frase-texto {
+        width: 80%;
+    }
+}
+/* -------- Estilo especial para Las Alucines -------- */
+.titulo-alucines {
+    color: #d39bff; /* Lila brillante */
+    text-shadow: 0 0 15px #d39bff, 0 0 35px #b366ff, 0 0 55px #9b4dff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-alucines:hover {
+    text-shadow: 0 0 25px #e0b3ff, 0 0 45px #c180ff, 0 0 80px #9b4dff;
+}
+
+/* Botón personalizado */
+.boton-reservar {
+    background-color: #d39bff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(211, 155, 255, 0.6);
+}
+
+.boton-reservar:hover {
+    background-color: #c180ff;
+    box-shadow: 0 0 30px rgba(211, 155, 255, 0.9);
+}
+
+/* Frase personalizada */
+.frase-alucines {
+    background-color: #1a001f;
+    border: 1px solid #d39bff;
+    box-shadow: 0 0 20px rgba(211, 155, 255, 0.3);
+}
+
+.frase-alucines p {
+    color: #d39bff;
+    font-style: italic;
+    font-size: 1.3rem;
+}
