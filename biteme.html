@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Me Tour | AURA Tours</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="index.html#conciertos">CONCIERTOS</a></li>
+        <li><a href="index.html#viajes">VIAJES</a></li>
+        <li><a href="index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#">Mis reservas</a>
+    </div>
+</header>
+
+<!-- HERO DEL CONCIERTO -->
+<section class="hero hero-concierto" style="background-image: url('imagenes/Renee2.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="titulo-biteme">BITE ME TOUR</h1>
+        <p>Reneé Rapp llega con una puesta en escena poderosa, emocional y sin filtros.</p>
+    </div>
+</section>
+
+<!-- DETALLES DEL CONCIERTO -->
+<main class="concierto-detalle">
+    <p class="descripcion">
+        La cantante y actriz <strong>Reneé Rapp</strong> presenta su esperada gira <em>Bite Me Tour</em>, un recorrido global que combina su inconfundible voz con letras intensas, vulnerables y llenas de fuerza.  
+        AURA Tours te lleva a vivir este espectáculo con toda la emoción y estilo que caracterizan a Reneé.
+    </p>
+
+    <div class="detalles">
+        <p><strong>📅 Fecha:</strong> 22 de julio de 2026</p>
+        <p><strong>📍 Lugar:</strong> Pepsi Center WTC, Ciudad de México</p>
+        <p><strong>💸 Precio desde:</strong> $12,500 MXN</p>
+    </div>
+
+    <a href="index.html#reservar" class="boton-reservar">Reservar ahora</a>
+</main>
+
+<!-- SECCIÓN EXTRA: imagen + frase -->
+<section class="frase-section">
+    <div class="frase-contenido">
+        <div class="frase-imagen">
+            <img src="imagenes/Renee3.jpg" alt="Renee Rapp en concierto">
+        </div>
+        <div class="frase-texto frase-biteme">
+            <p>“Ser vulnerable también es una forma de poder.”</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
