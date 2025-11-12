@@ -562,3 +562,44 @@ footer {
     font-style: italic;
     font-size: 1.3rem;
 }
+
+/* -------- Estilo especial para The Eras Tour -------- */
+.titulo-eras {
+    color: #ffb6c1; /* Rosa pastel */
+    text-shadow: 0 0 15px #ffb6c1, 0 0 35px #ff69b4, 0 0 55px #ff1493;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-eras:hover {
+    text-shadow: 0 0 25px #ffcce0, 0 0 45px #ff80bf, 0 0 80px #ff1493;
+}
+
+/* Botón personalizado */
+.boton-reservar {
+    background-color: #ffb6c1;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+}
+
+.boton-reservar:hover {
+    background-color: #ff80bf;
+    box-shadow: 0 0 30px rgba(255, 182, 193, 0.9);
+}
+
+/* Frase personalizada */
+.frase-eras {
+    background-color: #1a0011;
+    border: 1px solid #ffb6c1;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+}
+
+.frase-eras p {
+    color: #ffb6c1;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+

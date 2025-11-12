@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eras Tour | AURA Tours</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="index.html#conciertos">CONCIERTOS</a></li>
+        <li><a href="index.html#viajes">VIAJES</a></li>
+        <li><a href="index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#">Mis reservas</a>
+    </div>
+</header>
+
+<!-- HERO DEL CONCIERTO -->
+<section class="hero hero-concierto" style="background-image: url('imagenes/taylor2.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="titulo-eras">THE ERAS TOUR</h1>
+        <p>Revive cada era de Taylor Swift en una experiencia musical inolvidable.</p>
+    </div>
+</section>
+
+<!-- DETALLES DEL CONCIERTO -->
+<main class="concierto-detalle">
+    <p class="descripcion">
+        <strong>Taylor Swift</strong> te invita a recorrer todas sus eras musicales, desde sus inicios country hasta su más reciente producción pop.  
+        AURA Tours te ofrece la oportunidad de vivir el fenómeno musical más grande de la década con transporte, hospedaje y boletos incluidos.
+    </p>
+
+    <div class="detalles">
+        <p><strong>📅 Fecha:</strong> 15 de marzo de 2026</p>
+        <p><strong>📍 Lugar:</strong> Foro Sol, Ciudad de México</p>
+        <p><strong>💸 Precio desde:</strong> $25,000 MXN</p>
+    </div>
+
+    <a href="index.html#reservar" class="boton-reservar">Reservar ahora</a>
+</main>
+
+<!-- SECCIÓN EXTRA: imagen + frase -->
+<section class="frase-section">
+    <div class="frase-contenido">
+        <div class="frase-imagen">
+            <img src="imagenes/Taylor3.jpg" alt="Taylor Swift en The Eras Tour">
+        </div>
+        <div class="frase-texto frase-eras">
+            <p>“It’s been a long time coming.”</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
