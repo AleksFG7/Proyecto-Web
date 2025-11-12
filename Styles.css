@@ -631,3 +631,31 @@ footer {
     font-size: 1.3rem;
 }
 
+/* -------- Estilo especial para Guts Tour -------- */
+.titulo-guts {
+    color: #a855f7; /* Morado vibrante */
+    text-shadow: 0 0 15px #a855f7, 0 0 35px #7e22ce, 0 0 55px #5b21b6;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-guts:hover {
+    text-shadow: 0 0 25px #c084fc, 0 0 45px #a855f7, 0 0 80px #7e22ce;
+}
+
+/* Frase personalizada */
+.frase-guts {
+    background-color: #0a0012;
+    border: 1px solid #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.frase-guts p {
+    color: #a855f7;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
