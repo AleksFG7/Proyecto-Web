@@ -659,3 +659,32 @@ footer {
     font-size: 1.3rem;
 }
 
+/* -------- Estilo especial para The Secret of Us Tour -------- */
+.titulo-secret {
+    color: #ffd84d;
+    text-shadow: 0 0 15px #ffd84d, 0 0 35px #ffb300, 0 0 55px #ffcc00;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-secret:hover {
+    text-shadow: 0 0 25px #fff176, 0 0 45px #ffd54f, 0 0 80px #ffb300;
+}
+
+/* Frase personalizada */
+.frase-secret {
+    background-color: #1f1500;
+    border: 1px solid #ffcc33;
+    box-shadow: 0 0 20px rgba(255, 230, 120, 0.3);
+}
+
+.frase-secret p {
+    color: #ffcc33;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+
