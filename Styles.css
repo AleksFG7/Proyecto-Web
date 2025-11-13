@@ -687,4 +687,55 @@ footer {
     font-size: 1.3rem;
 }
 
+body {
+    background-color: #0e0010;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------- Estilo especial para Sabrina Carpenter -------- */
+.titulo-short {
+    color: #ffb6d9; /* Rosa pastel brillante */
+    text-shadow: 0 0 15px #ffb6d9, 0 0 35px #ff80bf, 0 0 55px #ff4da6;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-short:hover {
+    text-shadow: 0 0 25px #ffd1e8, 0 0 45px #ff99cc, 0 0 80px #ff4da6;
+}
+
+/* Botón personalizado */
+.boton-reservar {
+    background-color: #ff99cc;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 153, 204, 0.6);
+}
+
+.boton-reservar:hover {
+    background-color: #ffb6d9;
+    box-shadow: 0 0 30px rgba(255, 170, 220, 0.9);
+}
+
+/* Frase personalizada */
+.frase-short {
+    background-color: #1a0010;
+    border: 1px solid #ff99cc;
+    box-shadow: 0 0 20px rgba(255, 153, 204, 0.3);
+}
+
+.frase-short p {
+    color: #ffb6d9;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+
+
 

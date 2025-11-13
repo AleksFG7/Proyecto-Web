@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short n’ Sweet Tour | AURA Tours</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="index.html#conciertos">CONCIERTOS</a></li>
+        <li><a href="index.html#viajes">VIAJES</a></li>
+        <li><a href="index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#">Mis reservas</a>
+    </div>
+</header>
+
+<!-- HERO DEL CONCIERTO -->
+<section class="hero hero-concierto" style="background-image: url('imagenes/Sab2.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="titulo-short">SHORT N’ SWEET TOUR</h1>
+        <p>Sabrina Carpenter llega con su tour más encantador, lleno de energía, dulzura y glamour.</p>
+    </div>
+</section>
+
+<!-- DETALLES DEL CONCIERTO -->
+<main class="concierto-detalle">
+    <p class="descripcion">
+        <strong>Sabrina Carpenter</strong> presenta su gira mundial <em>Short n’ Sweet</em>, una experiencia vibrante y llena de carisma.
+        AURA Tours te lleva a disfrutar una noche inolvidable con sus más grandes éxitos y su inconfundible estilo.
+    </p>
+
+    <div class="detalles">
+        <p><strong>📅 Fecha:</strong> 20 de mayo de 2025</p>
+        <p><strong>📍 Lugar:</strong> Palacio de los Deportes, Ciudad de México</p>
+        <p><strong>💸 Precio desde:</strong> $11,200 MXN</p>
+    </div>
+
+    <a href="index.html#reservar" class="boton-reservar">Reservar ahora</a>
+</main>
+
+<!-- SECCIÓN EXTRA: imagen + frase -->
+<section class="frase-section">
+    <div class="frase-contenido">
+        <div class="frase-imagen">
+            <img src="imagenes/Sab3.jpg" alt="Sabrina Carpenter en concierto">
+        </div>
+        <div class="frase-texto frase-short">
+            <p>“She’s sugar, she’s spice, she’s Short n’ Sweet.”</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
