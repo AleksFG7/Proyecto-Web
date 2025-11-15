@@ -74,9 +74,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #F2F2F2;
-    padding: 40px;         /* más espacio interno */
-    width: 400px;          /* ancho más grande */
-    max-width: 90%;        /* se adapta si la pantalla es pequeña */
+    padding: 40px;         
+    width: 400px;          
+    max-width: 90%;       
     border: 1px solid #ccc;
     border-radius: 12px;
     text-align: left;
@@ -125,7 +125,7 @@ body {
     font-family: sans-serif;
 }
 
-/* -------- Logo AURA Tours -------- */
+
 .logo {
     position: absolute;
     left: 40px;
@@ -134,7 +134,7 @@ body {
 }
 
 .logo img {
-    height: 45px; /* ajusta según el tamaño de tu logo */
+    height: 45px; 
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -143,7 +143,7 @@ body {
     transform: scale(1.05);
 }
 
-/* -------- Página de concierto -------- */
+
 .concierto-detalle {
     max-width: 800px;
     margin: 120px auto 60px;
@@ -206,14 +206,14 @@ footer {
     margin-top: 60px;
 }
 
-/* -------- Modo oscuro para AURA Tours -------- */
+/*Modo oscuro*/
 
 body {
-    background-color: #000;  /* Fondo negro */
-    color: #fff;             /* Texto blanco */
+    background-color: #000; 
+    color: #fff;            
 }
 
-/* Header oscuro */
+
 header {
     background-color: #000;
     box-shadow: 0 2px 8px rgba(255,255,255,0.05);
@@ -225,12 +225,12 @@ header {
 }
 
 .elementosheader a:hover {
-    color: #00bfff; /* Azul claro al pasar el cursor */
+    color: #00bfff; 
 }
 
-/* Logo más grande */
+
 .logo img {
-    height: 70px; /* antes 45px */
+    height: 70px; 
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -428,14 +428,13 @@ footer {
     box-shadow: 0 0 30px rgba(0,191,255,0.9);
 }
 
-/* Título de sección */
 .titulo-seccion {
     text-align: center;
     font-size: 2rem;
     margin-top: 100px;
     color: #fff;
 }
-/* -------- Estilo especial para el DTMF Tour -------- */
+
 .titulo-dtmf {
     color: #ffd700; /* dorado */
     text-shadow: 0 0 15px #ffd700, 0 0 35px #ffcc00, 0 0 55px #ffaa00;
@@ -450,7 +449,7 @@ footer {
     text-shadow: 0 0 25px #ffee58, 0 0 45px #ffca28, 0 0 80px #ffa000;
 }
 
-/* Acentos dorados en botón */
+
 .boton-reservar {
     background-color: #ffd700;
     color: #000;
@@ -461,7 +460,7 @@ footer {
     background-color: #ffcc00;
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
 }
-/* -------- Sección frase Bad Bunny -------- */
+
 .frase-section {
     display: flex;
     justify-content: center;
@@ -508,7 +507,7 @@ footer {
     text-align: center;
 }
 
-/* Adaptable a pantallas pequeñas */
+
 @media (max-width: 768px) {
     .frase-contenido {
         flex-direction: column;
@@ -523,7 +522,7 @@ footer {
         width: 80%;
     }
 }
-/* -------- Estilo especial para Las Alucines -------- */
+
 .titulo-alucines {
     color: #d39bff; /* Lila brillante */
     text-shadow: 0 0 15px #d39bff, 0 0 35px #b366ff, 0 0 55px #9b4dff;
@@ -550,7 +549,7 @@ footer {
     box-shadow: 0 0 30px rgba(211, 155, 255, 0.9);
 }
 
-/* Frase personalizada */
+
 .frase-alucines {
     background-color: #1a001f;
     border: 1px solid #d39bff;
@@ -563,7 +562,7 @@ footer {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para The Eras Tour -------- */
+
 .titulo-eras {
     color: #ffb6c1; /* Rosa pastel */
     text-shadow: 0 0 15px #ffb6c1, 0 0 35px #ff69b4, 0 0 55px #ff1493;
@@ -578,7 +577,7 @@ footer {
     text-shadow: 0 0 25px #ffcce0, 0 0 45px #ff80bf, 0 0 80px #ff1493;
 }
 
-/* Botón personalizado */
+
 .boton-reservar {
     background-color: #ffb6c1;
     color: #000;
@@ -590,7 +589,7 @@ footer {
     box-shadow: 0 0 30px rgba(255, 182, 193, 0.9);
 }
 
-/* Frase personalizada */
+
 .frase-eras {
     background-color: #1a0011;
     border: 1px solid #ffb6c1;
@@ -603,7 +602,7 @@ footer {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para Bite Me Tour -------- */
+
 .titulo-biteme {
     color: #ff4d6d; /* Rosa fuerte */
     text-shadow: 0 0 15px #ff4d6d, 0 0 35px #c9184a, 0 0 55px #800f2f;
@@ -618,7 +617,7 @@ footer {
     text-shadow: 0 0 25px #ff758f, 0 0 45px #ff4d6d, 0 0 80px #c9184a;
 }
 
-/* Frase personalizada */
+
 .frase-biteme {
     background-color: #1a0008;
     border: 1px solid #ff4d6d;
@@ -631,9 +630,9 @@ footer {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para Guts Tour -------- */
+
 .titulo-guts {
-    color: #a855f7; /* Morado vibrante */
+    color: #a855f7;
     text-shadow: 0 0 15px #a855f7, 0 0 35px #7e22ce, 0 0 55px #5b21b6;
     font-size: 3.5rem;
     font-weight: 900;
@@ -646,7 +645,7 @@ footer {
     text-shadow: 0 0 25px #c084fc, 0 0 45px #a855f7, 0 0 80px #7e22ce;
 }
 
-/* Frase personalizada */
+
 .frase-guts {
     background-color: #0a0012;
     border: 1px solid #a855f7;
@@ -659,7 +658,7 @@ footer {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para The Secret of Us Tour -------- */
+
 .titulo-secret {
     color: #ffd84d;
     text-shadow: 0 0 15px #ffd84d, 0 0 35px #ffb300, 0 0 55px #ffcc00;
@@ -674,7 +673,7 @@ footer {
     text-shadow: 0 0 25px #fff176, 0 0 45px #ffd54f, 0 0 80px #ffb300;
 }
 
-/* Frase personalizada */
+
 .frase-secret {
     background-color: #1f1500;
     border: 1px solid #ffcc33;
@@ -696,7 +695,7 @@ body {
     padding: 0;
 }
 
-/* -------- Estilo especial para Sabrina Carpenter -------- */
+
 .titulo-short {
     color: #ffb6d9; /* Rosa pastel brillante */
     text-shadow: 0 0 15px #ffb6d9, 0 0 35px #ff80bf, 0 0 55px #ff4da6;
@@ -711,7 +710,7 @@ body {
     text-shadow: 0 0 25px #ffd1e8, 0 0 45px #ff99cc, 0 0 80px #ff4da6;
 }
 
-/* Botón personalizado */
+
 .boton-reservar {
     background-color: #ff99cc;
     color: #000;
@@ -723,7 +722,7 @@ body {
     box-shadow: 0 0 30px rgba(255, 170, 220, 0.9);
 }
 
-/* Frase personalizada */
+
 .frase-short {
     background-color: #1a0010;
     border: 1px solid #ff99cc;

@@ -68,7 +68,7 @@ async function iniciarSesion() {
         const data = await response.json();
 
         if (data.success) {
-            alert("Bienvenido, " + data.nombre + " 👋");
+            alert("Bienvenido, " + data.nombre + " ");
             cerrarFormulario();
             mostrarNombreEnHeader(data.nombre);
 
@@ -84,7 +84,7 @@ async function iniciarSesion() {
     }
 }
 
-// 🔹 REGISTRO (usa fetch para crear usuario en la base de datos)
+//  REGISTRO (usa fetch para crear usuario en la base de datos)
 async function registrarUsuario() {
     const nombre = document.getElementById("nombre").value.trim();
     const correo = document.getElementById("correo").value.trim();
