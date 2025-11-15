@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="Styles.css">
     <script src="comportamiento.js"></script>
 </head>
-<body>
+<div id="formulario" class="form-popup" style="display:none;">
+    <div class="form-box">
+        <h2 id="titulo-form"></h2>
+
+        <div id="form-content"></div>
+
+        <button onclick="cerrarFormulario()" class="cerrar-btn">Cerrar</button>
+    </div>
+</div>
+
 <header>
     <div class="logo">
         <a href="index.html">
@@ -26,8 +35,12 @@
         <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
         <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
         <a href="#">Mis reservas</a>
+        
     </div>
 </header>
+
+
+<body>
 
 <!-- Hero principal -->
 <section class="hero">
