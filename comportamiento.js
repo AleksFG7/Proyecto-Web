@@ -59,7 +59,7 @@ async function iniciarSesion() {
     }
 
     try {
-        const response = await fetch("/api/usuarios/login", {
+        const response = await fetch("http://localhost:8080/api/usuarios/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ correo, password })
@@ -96,7 +96,7 @@ async function registrarUsuario() {
     }
 
     try {
-        const response = await fetch("/api/usuarios/registro", {
+        const response = await fetch("http://localhost:8080/api/usuarios/registro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nombre, correo, password })
