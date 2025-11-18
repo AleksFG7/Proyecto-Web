@@ -9,7 +9,7 @@ function mostrarFormulario(tipo) {
     const titulo = document.getElementById("titulo-form");
     const contenido = document.getElementById("form-content");
 
-    formDiv.style.display = "block";
+    formDiv.style.display = "flex";
 
     if (tipo === "login") {
         titulo.textContent = "Iniciar sesión";
@@ -48,7 +48,7 @@ function cerrarFormulario() {
 //                          CONEXIÓN CON EL BACKEND
 // ============================================================================
 
-// 🔹 LOGIN (usa fetch para enviar los datos al backend)
+//  LOGIN (usa fetch para enviar los datos al backend)
 async function iniciarSesion() {
     const correo = document.getElementById("correo").value.trim();
     const password = document.getElementById("password").value.trim();

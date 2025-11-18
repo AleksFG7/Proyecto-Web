@@ -93,6 +93,104 @@ body {
     margin-top: 10px;
 }
 
+/* ===========================================
+      POPUP LOGIN/REGISTRO - ESTILO OSCURO
+   =========================================== */
+
+.form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65); /* Fondo oscuro transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px); /* Difuminado elegante */
+    z-index: 5000;
+}
+
+.form-box {
+    background: #111; /* Fondo negro */
+    width: 380px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.10);
+    animation: fadeIn 0.25s ease-out;
+    text-align: center;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.form-box h2 {
+    color: #fff;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+#form-content label {
+    color: #ddd;
+    font-weight: 600;
+}
+
+#form-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0 14px 0;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Botón principal */
+#form-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #8b5bff; /* Morado suave */
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 15px rgba(139, 91, 255, 0.4);
+}
+
+#form-content button:hover {
+    background: #a57cff;
+    box-shadow: 0 0 20px rgba(139, 91, 255, 0.7);
+}
+
+/* Botón cerrar */
+.cerrar-btn {
+    margin-top: 15px;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #333;
+}
+
+.cerrar-btn:hover {
+    background: #333;
+}
+
+
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
