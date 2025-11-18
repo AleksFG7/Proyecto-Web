@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Me Hard and Soft Tour | AURA Tours</title>
+    <link rel="stylesheet" href="/Styles.css">
+    <script src="../comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="../index.html#conciertos">CONCIERTOS</a></li>
+        <li><a href="../index.html#viajes">VIAJES</a></li>
+        <li><a href="../index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#">Mis reservas</a>
+    </div>
+</header>
+
+<!-- HERO DEL CONCIERTO -->
+<section class="hero hero-concierto" style="background-image: url('../imagenes/billie2.jpeg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="titulo-billie">HIT ME HARD AND SOFT TOUR</h1>
+        <p>Billie Eilish te sumerge en una experiencia profunda, íntima y poderosa que redefine la conexión con la música.</p>
+    </div>
+</section>
+
+<!-- DETALLES DEL CONCIERTO -->
+<main class="concierto-detalle">
+    <p class="descripcion">
+        <strong>Billie Eilish</strong> llega con su icónica gira <em>Hit Me Hard and Soft</em>, donde mezcla sensibilidad, oscuridad y una estética envolvente que solo ella puede crear.
+        AURA Tours te acerca a esta atmósfera única llena de emoción, vulnerabilidad y fuerza artística.
+    </p>
+
+    <div class="detalles">
+        <p><strong>📅 Fecha:</strong> 12 de octubre de 2026</p>
+        <p><strong>📍 Lugar:</strong> Foro Sol, Ciudad de México</p>
+        <p><strong>💸 Precio desde:</strong> $11,200 MXN</p>
+    </div>
+
+    <a href="../index.html#reservar" class="boton-reservar">Reservar ahora</a>
+</main>
+
+<!-- SECCIÓN EXTRA -->
+<section class="frase-section">
+    <div class="frase-contenido">
+        <div class="frase-imagen">
+            <img src="../imagenes/billie3.jpeg" alt="Billie Eilish en concierto">
+        </div>
+        <div class="frase-texto frase-billie">
+            <p>“Don’t be afraid to feel deeply.”</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

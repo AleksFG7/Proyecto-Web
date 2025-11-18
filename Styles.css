@@ -833,6 +833,63 @@ body {
     font-size: 1.3rem;
 }
 
+/* -------- Estilo especial para Billie Eilish -------- */
+
+.titulo-billie {
+    color: #6ec9c5; /* verde agua suave */
+    text-shadow: 0 0 12px #6ec9c5, 0 0 28px #4ea6a3, 0 0 45px #2e6f6d;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.titulo-billie:hover {
+    text-shadow: 0 0 22px #9ff0eb, 0 0 40px #6ec9c5, 0 0 70px #2e6f6d;
+}
+
+/* Frase personalizada */
+.frase-billie {
+    background-color: #051414;
+    border: 1px solid #6ec9c5;
+    box-shadow: 0 0 18px rgba(110, 201, 197, 0.3);
+}
+
+.frase-billie p {
+    color: #9ff0eb;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+/* -------- Estilo especial para Katy Perry -------- */
+
+.titulo-katy {
+    color: #ff71c6; /* rosa pop */
+    text-shadow: 0 0 15px #ff71c6, 0 0 35px #ff3ea3, 0 0 55px #d90079;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.titulo-katy:hover {
+    text-shadow: 0 0 25px #ffa1dd, 0 0 45px #ff5ebd, 0 0 70px #d90079;
+}
+
+/* Frase personalizada */
+.frase-katy {
+    background-color: #210016;
+    border: 1px solid #ff71c6;
+    box-shadow: 0 0 20px rgba(255, 113, 198, 0.3);
+}
+
+.frase-katy p {
+    color: #ff9ad7;
+    font-style: italic;
+    font-size: 1.3rem;
+}
 
 
 
