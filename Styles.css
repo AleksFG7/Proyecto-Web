@@ -891,5 +891,45 @@ body {
     font-size: 1.3rem;
 }
 
+/* -------- Estilo especial para Cosa Nuestra Tour (Rauw Alejandro) -------- */
+.titulo-rauw {
+    color: #4db8ff; /* Azul eléctrico */
+    text-shadow: 0 0 15px #4db8ff, 0 0 35px #1e90ff, 0 0 55px #0066cc;
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+}
+
+.titulo-rauw:hover {
+    text-shadow: 0 0 25px #80d4ff, 0 0 45px #4db8ff, 0 0 80px #1e90ff;
+}
+
+/* Botón */
+.boton-reservar {
+    background-color: #4db8ff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(77, 184, 255, 0.6);
+}
+
+.boton-reservar:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 0 30px rgba(77, 184, 255, 0.9);
+}
+
+/* Frase */
+.frase-rauw {
+    background-color: #001726;
+    border: 1px solid #4db8ff;
+    box-shadow: 0 0 20px rgba(77, 184, 255, 0.3);
+}
+
+.frase-rauw p {
+    color: #4db8ff;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
 
 

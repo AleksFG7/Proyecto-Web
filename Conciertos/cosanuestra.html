@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosa Nuestra Tour | AURA Tours</title>
+    <link rel="stylesheet" href="../Styles.css">
+    <script src="comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="index.html">
+           <img src="../imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="index.html#conciertos">CONCIERTOS</a></li>
+        <li><a href="index.html#viajes">VIAJES</a></li>
+        <li><a href="index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#">Mis reservas</a>
+    </div>
+</header>
+
+<!-- HERO DEL CONCIERTO -->
+<section class="hero hero-concierto" style="background-image: url('../imagenes/cosanuestra.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="titulo-rauw">COSA NUESTRA TOUR</h1>
+        <p>Rauw Alejandro llega con su show más futurista, explosivo y lleno de flow. Vive la experiencia con AURA Tours.</p>
+    </div>
+</section>
+
+<!-- DETALLES DEL CONCIERTO -->
+<main class="concierto-detalle">
+    <p class="descripcion">
+        <strong>Rauw Alejandro</strong> trae su energía única con el <em>Cosa Nuestra Tour</em>, un espectáculo lleno de baile, visuales futuristas y ritmos electrónicos.  
+        AURA Tours te ofrece la experiencia completa para disfrutar esta noche inolvidable.
+    </p>
+
+    <div class="detalles">
+        <p><strong>📅 Fecha:</strong> 18 de octubre de 2026</p>
+        <p><strong>📍 Lugar:</strong> Arena Monterrey, Monterrey, México</p>
+        <p><strong>💸 Precio desde:</strong> $12,500 MXN</p>
+    </div>
+
+    <a href="index.html#reservar" class="boton-reservar">Reservar ahora</a>
+</main>
+
+<!-- SECCIÓN EXTRA: imagen + frase -->
+<section class="frase-section">
+    <div class="frase-contenido">
+        <div class="frase-imagen">
+            <img src="../imagenes/cosanuestra2.jpg" alt="Rauw Alejandro en concierto">
+        </div>
+
+        <div class="frase-texto frase-rauw">
+            <p>“El movimiento es mío, el futuro también.”</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
