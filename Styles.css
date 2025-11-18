@@ -931,5 +931,49 @@ body {
     font-size: 1.3rem;
 }
 
+.frase-tito {
+    background-color: #001a0f;
+    border: 1px solid #00e68a;
+    box-shadow: 0 0 25px rgba(0, 230, 138, 0.4);
+}
+.frase-tito p {
+    color: #00ffa6;
+}
+
+.frase-ariana {
+    background-color: #2b0026;
+    border: 1px solid #ffb3e6;
+    box-shadow: 0 0 25px rgba(255, 179, 230, 0.4);
+}
+.frase-ariana p {
+    color: #ffc9ee;
+}
+
+.frase-lady {
+    background-color: #240026;
+    border: 1px solid #ff4dd2;
+    box-shadow: 0 0 25px rgba(255, 77, 210, 0.4);
+}
+.frase-lady p {
+    color: #ff8ae0;
+}
+
+.frase-mother {
+    background-color: #001a2b;
+    border: 1px solid #69d0ff;
+    box-shadow: 0 0 25px rgba(105, 208, 255, 0.4);
+}
+.frase-mother p {
+    color: #82e4ff;
+}
+
+.frase-dua {
+    background-color: #18002b;
+    border: 1px solid #c07bff;
+    box-shadow: 0 0 25px rgba(192, 123, 255, 0.4);
+}
+.frase-dua p {
+    color: #d6a5ff;
+}
 
 
