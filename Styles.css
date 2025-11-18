@@ -3,13 +3,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    font-family: fantasy;
+    font-family: arial;
 }
 
 .elementosheader {
@@ -23,8 +23,9 @@ header {
 .elementosheader a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
 }
+
 
 .menu-icon {
     position: absolute;
@@ -224,6 +225,7 @@ body {
 }
 
 
+/* -------- Logo AURA Tours -------- */
 .logo {
     position: absolute;
     left: 40px;
@@ -232,7 +234,7 @@ body {
 }
 
 .logo img {
-    height: 45px; 
+    height: 45px; /* ajusta según el tamaño de tu logo */
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -241,7 +243,7 @@ body {
     transform: scale(1.05);
 }
 
-
+/* -------- Página de concierto -------- */
 .concierto-detalle {
     max-width: 800px;
     margin: 120px auto 60px;
@@ -295,6 +297,14 @@ body {
     background-color: #0070a6;
 }
 
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    color: #555;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
 /* Footer */
 footer {
     background-color: #f2f2f2;
@@ -478,6 +488,20 @@ footer {
     overflow: hidden;
 }
 
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url('imagenes/nosotros.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
 .overlay {
     position: absolute;
     top: 0;
@@ -495,6 +519,14 @@ footer {
     padding: 20px;
 }
 
+.hero-content2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 20px;
+    padding: 20px;
+}
+
 .hero-content h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -506,6 +538,23 @@ footer {
     font-size: 1.2rem;
     margin-top: 20px;
     color: #ddd;
+}
+
+
+/* Asegura que las imágenes no sean afectadas por el overlay */
+.hero-right {
+    position: relative;
+    z-index: 3; /* arriba del overlay */
+}
+
+/* Lado derecho */
+.hero-right img {
+    width: 230px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 2px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
 .hero-btn {
@@ -930,6 +979,3 @@ body {
     font-style: italic;
     font-size: 1.3rem;
 }
-
-
-

@@ -17,6 +17,7 @@
     </div>
 </div>
 
+<body>
 <header>
     <div class="logo">
         <a href="index.html">
@@ -25,8 +26,11 @@
     </div>
 
     <ul class="elementosheader">
-        <li><a href="#conciertos">CONCIERTOS</a></li>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
         <li><a href="#viajes">VIAJES</a></li>
+        <li><a href="#conciertos">EVENTOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
         <li><a href="#reservar">RESERVAR</a></li>
     </ul>
 
@@ -34,26 +38,23 @@
     <div class="menu-desplegable" id="menu">
         <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
         <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
-        <a href="#">Mis reservas</a>
-        
+        <a href="#" onclick="mostrarFormulario('login')">Mis reservas</a>
+
     </div>
 </header>
 
-
-<body>
-
 <!-- Hero principal -->
-<section class="hero">
+<section id="inicio" class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
         <h1>AURA TOURS</h1>
         <p>Vive la música. Viaja. Siente la experiencia.</p>
-        <a href="#conciertos" class="hero-btn">Explorar conciertos</a>
+        <a href="conciertos" class="hero-btn">Explorar conciertos</a>
     </div>
 </section>
 
 <!-- Galería de conciertos -->
-<h2 id="conciertos" class="titulo-seccion">Eventos disponibles</h2>
+<section id="conciertos" class="section">
 <div class="galeria">
     <div class="tarjeta">
         <a href="Conciertos/eras.html"><img src="imagenes/Taylor.jpg" alt="The Eras Tour"></a>
@@ -115,11 +116,50 @@
         <a href="Conciertos/ariana.html"><img src="imagenes/eternalsunshine.jpg" alt="Eternal Sunshine Tour"></a>
         <h3>Eternal Sunshine TOUR</h3>
      </div>
-     
+</div>
+</section>
+
+<!-- Hero NOSOTROS -->
+
+<section id="nosotros" class="hero2">
+    <div class="overlay"></div>
+    <div class="hero-content2"></div>
+    <div class="hero-content">
+        <h1>SOMOS AURA TOURS</h1>
+
+        <h2>¡Te llevamos a ver a tus artistas<br>favoritos!</h2>
+
+        <p>
+            En AURA TOURS creemos que cada viaje debe sentirse como una experiencia única.
+            Aunque somos una agencia joven, hemos acompañado a viajeros en la creación de
+            momentos que se convierten en recuerdos para toda la vida. Nuestro objetivo no es
+            solo llevarte a un destino: es ofrecerte un viaje completo, seguro y bien coordinado
+            para que disfrutes sin preocupaciones.
+        </p>
+
+        <p>
+            Conectamos a las personas con la música, el deporte y las experiencias
+            que más disfrutan, además de ofrecer rutas y tours por todo el mundo. Nuestro equipo
+            diseña viajes a conciertos, eventos especiales y experiencias recreativas en México
+            y en destinos internacionales, siempre con la calidad, organización y atención que
+            nos caracteriza.
+        </p>
+
+    </div>
+
+
+    <div class="hero-right">
+        <!-- Aquí puedes meter tu carrusel o imágenes -->
+        <img src="imagenes/turismo1.jpg" alt="Ejemplo">
+        <img src="imagenes/turismo2.jpg" alt="Ejemplo">
+        <img src="imagenes/turismo3.webp" alt="Ejemplo">
+
+    </div>
+</section>
+
 <footer>
     <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
 </footer>
 
 </body>
 </html>
-

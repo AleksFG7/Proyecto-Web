@@ -3,7 +3,7 @@ function toggleMenu() {
     document.getElementById("menu").classList.toggle("mostrar");
 }
 
-// --- Mostrar el formulario (login o registro) ---
+//Mostrar el formulario (login o registro)
 function mostrarFormulario(tipo) {
     const formDiv = document.getElementById("formulario");
     const titulo = document.getElementById("titulo-form");
@@ -43,10 +43,6 @@ function mostrarFormulario(tipo) {
 function cerrarFormulario() {
     document.getElementById("formulario").style.display = "none";
 }
-
-// ============================================================================
-//                          CONEXIÓN CON EL BACKEND
-// ============================================================================
 
 //  LOGIN (usa fetch para enviar los datos al backend)
 async function iniciarSesion() {
