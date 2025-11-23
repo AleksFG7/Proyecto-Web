@@ -41,6 +41,16 @@
         <a href="#" onclick="mostrarFormulario('login')">Mis reservas</a>
 
     </div>
+
+    <div id="ventanaVerificacion" class="ventana" style="display:none;">
+    <h2>Verificar cuenta</h2>
+    <p>Ingresa el código enviado a tu correo:</p>
+
+    <input type="text" id="codigoVerificacion" placeholder="Código de 6 dígitos">
+
+    <button onclick="verificarCodigo()">Verificar</button>
+    <p id="mensajeVerificacion" style="color:red; margin-top:10px;"></p>
+</div>
 </header>
 
 <!-- Hero principal -->

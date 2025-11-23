@@ -3,7 +3,7 @@ function toggleMenu() {
     document.getElementById("menu").classList.toggle("mostrar");
 }
 
-//Mostrar el formulario (login o registro)
+// Mostrar el formulario (login o registro)
 function mostrarFormulario(tipo) {
     const formDiv = document.getElementById("formulario");
     const titulo = document.getElementById("titulo-form");
@@ -44,7 +44,7 @@ function cerrarFormulario() {
     document.getElementById("formulario").style.display = "none";
 }
 
-//  LOGIN (usa fetch para enviar los datos al backend)
+//  LOGIN
 async function iniciarSesion() {
     const email = document.getElementById("correo").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -68,7 +68,6 @@ async function iniciarSesion() {
             cerrarFormulario();
             mostrarNombreEnHeader(data.nombre);
 
-            // Guardar el nombre en sessionStorage para mantener sesión
             sessionStorage.setItem("usuarioActivo", data.nombre);
         } else {
             alert(data.mensaje || "Credenciales incorrectas");
@@ -80,7 +79,7 @@ async function iniciarSesion() {
     }
 }
 
-//  REGISTRO (usa fetch para crear usuario en la base de datos)
+//  REGISTRO
 async function registrarUsuario() {
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -90,7 +89,6 @@ async function registrarUsuario() {
         alert("Por favor llena todos los campos");
         return;
     }
-
 
     try {
         const response = await fetch("http://localhost:8080/api/usuarios/registro", {
@@ -102,8 +100,13 @@ async function registrarUsuario() {
         const data = await response.json();
 
         if (data.success) {
-            alert("✅ " + data.mensaje);
+
+            //  Guardamos el correo para la verificación
+            sessionStorage.setItem("emailRegistro", data.email);
+
+            mostrarVentanaVerificacion(data.email);
             cerrarFormulario();
+
         } else {
             alert("⚠️ " + data.mensaje);
             console.log(data)
@@ -132,10 +135,53 @@ function mostrarNombreEnHeader(nombre) {
     usuarioSpan.textContent = "👤 " + nombre;
 }
 
-// --- Mostrar el nombre del usuario guardado si recarga la página ---
+// --- Mostrar el nombre del usuario guardado al recargar ---
 window.addEventListener("load", () => {
     const usuarioGuardado = sessionStorage.getItem("usuarioActivo");
     if (usuarioGuardado) {
         mostrarNombreEnHeader(usuarioGuardado);
     }
 });
+
+// --- Ventana para verificar código ---
+let emailRegistro = "";
+
+function mostrarVentanaVerificacion(email) {
+    emailRegistro = email;
+    document.getElementById("ventanaVerificacion").style.display = "block";
+}
+
+// --- Verificar código ---
+function verificarCodigo() {
+const codigo = document.getElementById("codigoVerificacion").value;
+const email = sessionStorage.getItem("emailRegistro"); // ← Ahora sí, se obtiene bien
+
+if (!email) {
+    alert("No se pudo obtener el correo del registro.");
+    return;
+}
+
+fetch("http://localhost:8080/api/usuarios/verificar", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        email: email,
+        codigo: codigo
+    })
+})
+.then(res => res.json())
+.then(data => {
+    if (data.success) {
+        document.getElementById("mensajeVerificacion").style.color = "green";
+        document.getElementById("mensajeVerificacion").innerText = "Cuenta verificada correctamente";
+
+        setTimeout(() => {
+            alert("Tu cuenta ya está verificada, ahora puedes iniciar sesión");
+            document.getElementById("ventanaVerificacion").style.display = "none";
+        }, 1000);
+
+    } else {
+        document.getElementById("mensajeVerificacion").innerText = "Código incorrecto";
+    }
+});
+}
