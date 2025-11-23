@@ -29,7 +29,7 @@ function mostrarFormulario(tipo) {
             <label>Nombre:</label><br>
             <input type="text" id="nombre" placeholder="Ingresa tu nombre" required><br><br>
             <label>Correo:</label><br>
-            <input type="email" id="correo" placeholder="Ingresa tu correo" required><br><br>
+            <input type="email" id="email" placeholder="Ingresa tu correo" required><br><br>
             <label>Contraseña:</label><br>
             <input type="password" id="password" placeholder="Crea una contraseña" required><br><br>
             <button type="button" id="btnRegistro">Registrarse</button>
@@ -46,10 +46,10 @@ function cerrarFormulario() {
 
 //  LOGIN (usa fetch para enviar los datos al backend)
 async function iniciarSesion() {
-    const correo = document.getElementById("correo").value.trim();
+    const email = document.getElementById("correo").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    if (!correo || !password) {
+    if (!email || !password) {
         alert("Por favor, llena todos los campos");
         return;
     }
@@ -58,7 +58,7 @@ async function iniciarSesion() {
         const response = await fetch("http://localhost:8080/api/usuarios/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ correo, password })
+            body: JSON.stringify({ email, password })
         });
 
         const data = await response.json();
@@ -83,19 +83,20 @@ async function iniciarSesion() {
 //  REGISTRO (usa fetch para crear usuario en la base de datos)
 async function registrarUsuario() {
     const nombre = document.getElementById("nombre").value.trim();
-    const correo = document.getElementById("correo").value.trim();
+    const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    if (!nombre || !correo || !password) {
-        alert("Por favor, completa todos los campos");
+    if(!nombre || !email || !password){
+        alert("Por favor llena todos los campos");
         return;
     }
+
 
     try {
         const response = await fetch("http://localhost:8080/api/usuarios/registro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nombre, correo, password })
+            body: JSON.stringify({ nombre, email, password })
         });
 
         const data = await response.json();
@@ -105,6 +106,7 @@ async function registrarUsuario() {
             cerrarFormulario();
         } else {
             alert("⚠️ " + data.mensaje);
+            console.log(data)
         }
 
     } catch (error) {
