@@ -1105,4 +1105,54 @@ body {
     box-shadow: 0 0 25px rgba(255, 79, 181, 0.7);
 }
 
+/* ---------- MIS RESERVAS ---------- */
+
+.reservas-section {
+    padding: 80px 10%;
+    text-align: center;
+    color: #fff;
+}
+
+.titulo-reservas {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #9f4dff;
+}
+
+.texto-reservas {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.lista-reservas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reserva-card {
+    background-color: #111;
+    border: 1px solid #9f4dff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(159, 77, 255, 0.2);
+    text-align: left;
+}
+
+.reserva-card h3 {
+    color: #d7b6ff;
+    font-size: 1.6rem;
+}
+
+.reserva-card p {
+    opacity: 0.8;
+}
+
+.reserva-card.ejemplo {
+    text-align: center;
+}
+
 
