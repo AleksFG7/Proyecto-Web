@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Experience | AURA Tours</title>
+    <link rel="stylesheet" href="../Styles.css">
+    <script src="../comportamiento.js"></script>
+</head>
+<body>
+
+<!-- HEADER ORIGINAL -->
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="AURA Tours Logo">
+        </a>
+    </div>
+
+    <ul class="elementosheader">
+        <li><a href="../index.html#inicio">INICIO</a></li>
+        <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+        <li><a href="../index.html#viajes">VIAJES</a></li>
+        <li><a href="../index.html#conciertos">EVENTOS</a></li>
+        <li><a href="../index.html#contacto">CONTACTO</a></li>
+        <li><a href="../index.html#reservar">RESERVAR</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-desplegable" id="menu">
+        <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
+        <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
+        <a href="#" onclick="mostrarFormulario('login')">Mis reservas</a>
+    </div>
+</header>
+
+<!-- CONTENIDO DEL VIAJE -->
+<div class="viaje-contenedor">
+    <div class="viaje-img">
+        <img src="../imagenes/tokyo.jpeg" alt="Tokyo Experience">
+    </div>
+
+    <div class="viaje-info">
+        <h1 class="titulo-viaje">Tokyo Experience</h1>
+
+        <p class="descripcion">
+            Sumérgete en una mezcla única de tradición y tecnología: templos milenarios, barrios futuristas,
+            gastronomía única y la energía vibrante de Tokio.
+        </p>
+
+        <div class="detalles">
+            <p><strong>📍 Destino:</strong> Tokio, Japón</p>
+            <p><strong>📅 Fechas disponibles:</strong> 15–22 octubre 2025</p>
+            <p><strong>💵 Precio por persona:</strong> $27,500 MXN</p>
+            <p><strong>📸 Lugares incluidos:</strong> Shibuya, Akihabara, Senso-ji, Tokyo Tower, Odaiba</p>
+            <p><strong>🎟 Incluye:</strong> Hotel 4★, transporte, guía bilingüe, entrada a TeamLab Borderless</p>
+        </div>
+
+        <button class="btn-reservar" onclick="mostrarFormulario('reserva')">
+            Reservar ahora
+        </button>
+    </div>
+</div>
+
+<!-- FOOTER ORIGINAL -->
+<footer>
+    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
