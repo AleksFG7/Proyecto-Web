@@ -1262,4 +1262,57 @@ body {
     color: #777;
     font-size: 14px;
 }
+/* GALERÍA EN PÁGINA DE VIAJE */
+.galeria-viaje-detalle {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.galeria-viaje-detalle h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+.galeria-viaje-detalle h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 40px 0 25px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.galeria-viaje-detalle h2::after {
+    content: "";
+    width: 90px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6fcf, #ffb4e6);
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
 
