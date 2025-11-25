@@ -62,13 +62,18 @@ async function iniciarSesion() {
         });
 
         const data = await response.json();
+        console.log(data); // justo después de `await response.json()`
+        
+
 
         if (data.success) {
             alert("Bienvenido, " + data.nombre + " ");
             cerrarFormulario();
             mostrarNombreEnHeader(data.nombre);
-
+             // Guardar datos solo si login fue exitoso
             sessionStorage.setItem("usuarioActivo", data.nombre);
+            sessionStorage.setItem("idUsuario", data.id); 
+          
         } else {
             alert(data.mensaje || "Credenciales incorrectas");
         }
@@ -185,3 +190,97 @@ fetch("http://localhost:8080/api/usuarios/verificar", {
     }
 });
 }
+
+// Reservar paquetes
+let paqueteIdGlobal = null;
+
+window.confirmarReserva = function(idPaquete) {
+    paqueteIdGlobal = idPaquete; // guardar el paquete seleccionado
+    document.getElementById("modalReserva").style.display = "flex";
+}
+
+function cerrarModal() {
+    document.getElementById("modalReserva").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnConfirmar = document.getElementById("btnConfirmar");
+    if (btnConfirmar) {
+        btnConfirmar.addEventListener("click", function() {
+
+            const usuarioId = sessionStorage.getItem("usuarioId");
+            const paqueteId = paqueteIdGlobal;  
+            if (!usuarioId) {
+                alert("Debes iniciar sesión para reservar");
+                return;
+            }
+
+            console.log({
+                idUsuario: usuarioId,
+                idPaquete: paqueteIdGlobal
+            });
+
+            fetch("http://localhost:8080/api/reservas", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    idUsuario: parseInt(usuarioId),
+                    idPaquete: parseInt(paqueteId)
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => { throw new Error(text) });
+                }
+                return response.json();
+            })
+            .then(data => {
+                alert("¡Reserva creada exitosamente!");
+                cerrarModal();
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Ocurrió un error al crear la reserva.");
+            });
+        });
+    }
+});
+//Carga de reservas
+document.addEventListener("DOMContentLoaded", () => {
+    const idUsuario = sessionStorage.getItem("idUsuario"); // id dinámico
+    console.log(sessionStorage.getItem("idUsuario"));
+
+
+    if (!idUsuario) {
+        console.error("Usuario no logueado");
+        return;
+    }
+
+    fetch(`http://localhost:8080/api/reservas/${idUsuario}`)
+        .then(res => res.json())
+        .then(reservas => {
+            const contenedor = document.getElementById("contenedorReservas");
+            contenedor.innerHTML = ""; // limpiar mensaje de ejemplo
+
+            if (reservas.length === 0) {
+                contenedor.innerHTML = `
+                    <div class="reserva-card ejemplo">
+                        <h3>Sin reservas aún</h3>
+                        <p>Cuando reserves un viaje o concierto, aparecerá aquí.</p>
+                    </div>`;
+            } else {
+                reservas.forEach(reserva => {
+                    contenedor.innerHTML += `
+                        <div class="reserva-card">
+                            <h3>Reserva #${reserva.id}</h3>
+                            <p>Paquete: ${reserva.paquete.nombre}</p>
+                            <p>Usuario: ${reserva.usuario.nombre}</p>
+                        </div>`;
+                });
+            }
+        })
+        .catch(error => console.error("Error al cargar reservas:", error));
+});
+
+
+
