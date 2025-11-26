@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYC Fashion Week | AURA Tours</title>
     <link rel="stylesheet" href="../Styles.css">
-    <script src="../comportamiento.js"></script>
+
 </head>
 <body>
 
@@ -56,9 +56,7 @@
             <p><strong>🎟 Incluye:</strong> Hotel 4★, transporte, acceso a un evento oficial de Fashion Week</p>
         </div>
 
-        <button class="btn-reservar" onclick="mostrarFormulario('reserva')">
-            Reservar ahora
-        </button>
+        <button class="boton-reservar" onclick="confirmarReserva(17)">Reservar ahora</button>
     </div>
 </div>
 <!-- GALERÍA DEL VIAJE -->
@@ -81,5 +79,14 @@
     <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
 </footer>
 
+<div id="modalReserva">
+    <div class="contenido-modal">
+        <p>¿Estás seguro que deseas reservar este paquete?</p>
+        <button id="btnConfirmar" class="btn-reserva">Reservar</button>
+        <button onclick="cerrarModal()" class="btn-cancelar">Cancelar</button>
+    </div>
+</div>
+
+<script src="/comportamiento.js"></script>
 </body>
 </html>
