@@ -53,7 +53,7 @@
         <p><strong>💸 Precio desde:</strong> $12,500 MXN</p>
     </div>
 
-    <a href="index.html#reservar" class="boton-reservar">Reservar ahora</a>
+    <button class="boton-reservar" onclick="confirmarReserva(15)">Reservar ahora</button>
 </main>
 
 <!-- SECCIÓN EXTRA: imagen + frase -->
@@ -73,6 +73,16 @@
 <footer>
     <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
 </footer>
+
+
+<div id="modalReserva">
+    <div class="contenido-modal">
+        <p>¿Estás seguro que deseas reservar este paquete?</p>
+        <button id="btnConfirmar" class="btn-reserva">Reservar</button>
+        <button onclick="cerrarModal()" class="btn-cancelar">Cancelar</button>
+    </div>
+</div>
+
 
 </body>
 </html>

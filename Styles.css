@@ -1381,4 +1381,66 @@ body {
     to   { opacity: 1; transform: translate(-50%, -50%); }
 }
 
+/* Pop up para reservar*/
+#modalReserva {
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(2px);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+/* Contenedor */
+#modalReserva > div {
+    background:#1d1424;                   
+    padding:30px;
+    border-radius:14px;
+    max-width:380px;
+    width:90%;
+    text-align:center;
+    color:#f1e8ff;
+
+    border:1px solid #6a3fa8;             
+}
+
+/* Texto */
+#modalReserva p {
+    font-size:19px;
+    font-weight:600;
+    margin-bottom:22px;
+}
+
+/* Botones */
+#modalReserva button {
+    padding:10px 22px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+    margin:5px;
+    transition:.25s;
+}
+
+/* Botón confirmar suave, morado */
+#btnConfirmar {
+    background:#8a4cd6;
+    color:white;
+}
+#btnConfirmar:hover {
+    background:#a674e9;
+}
+
+/* boton Cancelar */
+#modalReserva button:last-child {
+    background:#3a3a3a;
+    color:#ffffff;
+}
+#modalReserva button:last-child:hover {
+    background:#4b4b4b;
+}
+
+
 
