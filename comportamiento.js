@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btnConfirmar) {
         btnConfirmar.addEventListener("click", function() {
 
-            const usuarioId = sessionStorage.getItem("usuarioId");
+            const usuarioId = sessionStorage.getItem("idUsuario");
             const paqueteId = paqueteIdGlobal;  
             if (!usuarioId) {
                 alert("Debes iniciar sesión para reservar");
@@ -240,6 +240,10 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(error => {
                 console.error(error);
+                console.log({
+                idUsuario: usuarioId,
+                idPaquete: paqueteIdGlobal
+            });
                 alert("Ocurrió un error al crear la reserva.");
             });
         });
@@ -260,6 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.json())
         .then(reservas => {
             const contenedor = document.getElementById("contenedorReservas");
+            
             contenedor.innerHTML = ""; // limpiar mensaje de ejemplo
 
             if (reservas.length === 0) {
@@ -282,5 +287,13 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error al cargar reservas:", error));
 });
 
+//Cerrar sesion
+function cerrarSesion() {
+    // Borrar datos del usuario
+    sessionStorage.clear();  
+
+    // Redirigir al inicio o login
+    window.location.href = "index.html"; 
+}
 
 
