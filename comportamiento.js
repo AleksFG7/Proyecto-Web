@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 reservas.forEach(reserva => {
                     contenedor.innerHTML += `
                         <div class="reserva-card">
-                            <h3>Reserva #${reserva.id}</h3>
+                            <h3>Reserva #${reserva.numeroReserva}</h3>
                             <p>Paquete: ${reserva.paquete.nombre}</p>
                             <p>Usuario: ${reserva.usuario.nombre}</p>
                         </div>`;
@@ -296,4 +296,31 @@ function cerrarSesion() {
     window.location.href = "index.html"; 
 }
 
+//NewsLetter
+document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // evitar refrescar la página
+
+    const nombre = document.getElementById("newsletterName").value;
+    const email = document.getElementById("newsletterEmail").value;
+
+    if (!nombre || !email) {
+        alert("Por favor completa nombre y email.");
+        return;
+    }
+
+    fetch("http://localhost:8080/api/newsletter/suscribir", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, email })
+    })
+        .then(res => res.text())
+        .then(msg => {
+            alert("¡Gracias por suscribirte! Revisa tu correo.");
+            
+            // limpiar campos
+            document.getElementById("newsletterName").value = "";
+            document.getElementById("newsletterEmail").value = "";
+        })
+        .catch(err => console.error("Error:", err));
+});
 
