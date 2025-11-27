@@ -1,4 +1,4 @@
-// --- Mostrar y ocultar menú ---
+// Mostrar y ocultar menú 
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("mostrar");
 }
@@ -39,12 +39,12 @@ function mostrarFormulario(tipo) {
     }
 }
 
-// --- Cerrar formulario ---
+// Cerrar formulario
 function cerrarFormulario() {
     document.getElementById("formulario").style.display = "none";
 }
 
-//  LOGIN
+// login
 async function iniciarSesion() {
     const email = document.getElementById("correo").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -62,7 +62,7 @@ async function iniciarSesion() {
         });
 
         const data = await response.json();
-        console.log(data); // justo después de `await response.json()`
+        console.log(data); 
         
 
 
@@ -84,7 +84,7 @@ async function iniciarSesion() {
     }
 }
 
-//  REGISTRO
+//  registro
 async function registrarUsuario() {
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -106,7 +106,7 @@ async function registrarUsuario() {
 
         if (data.success) {
 
-            //  Guardamos el correo para la verificación
+            // guardamos el correo para la verificación
             sessionStorage.setItem("emailRegistro", data.email);
 
             mostrarVentanaVerificacion(data.email);
@@ -123,7 +123,7 @@ async function registrarUsuario() {
     }
 }
 
-// --- Mostrar nombre en el header después del login ---
+// Mostrar nombre en el header después del login
 function mostrarNombreEnHeader(nombre) {
     const header = document.querySelector("header");
     let usuarioSpan = document.getElementById("usuarioActivo");
@@ -132,15 +132,15 @@ function mostrarNombreEnHeader(nombre) {
         usuarioSpan = document.createElement("span");
         usuarioSpan.id = "usuarioActivo";
         usuarioSpan.style.marginLeft = "20px";
-        usuarioSpan.style.fontWeight = "bold";
-        usuarioSpan.style.color = "#222";
+        usuarioSpan.style.fontWeight = "arial";
+        usuarioSpan.style.color = "#ffffffff";
         header.appendChild(usuarioSpan);
     }
 
     usuarioSpan.textContent = "👤 " + nombre;
 }
 
-// --- Mostrar el nombre del usuario guardado al recargar ---
+// Mostrar el nombre del usuario guardado al recargar
 window.addEventListener("load", () => {
     const usuarioGuardado = sessionStorage.getItem("usuarioActivo");
     if (usuarioGuardado) {
@@ -148,7 +148,7 @@ window.addEventListener("load", () => {
     }
 });
 
-// --- Ventana para verificar código ---
+// Ventana para verificar código
 let emailRegistro = "";
 
 function mostrarVentanaVerificacion(email) {
@@ -156,10 +156,10 @@ function mostrarVentanaVerificacion(email) {
     document.getElementById("ventanaVerificacion").style.display = "block";
 }
 
-// --- Verificar código ---
+// Verificar código
 function verificarCodigo() {
 const codigo = document.getElementById("codigoVerificacion").value;
-const email = sessionStorage.getItem("emailRegistro"); // ← Ahora sí, se obtiene bien
+const email = sessionStorage.getItem("emailRegistro"); 
 
 if (!email) {
     alert("No se pudo obtener el correo del registro.");
@@ -195,7 +195,7 @@ fetch("http://localhost:8080/api/usuarios/verificar", {
 let paqueteIdGlobal = null;
 
 window.confirmarReserva = function(idPaquete) {
-    paqueteIdGlobal = idPaquete; // guardar el paquete seleccionado
+    paqueteIdGlobal = idPaquete; // p/guardar el paq seleccionado
     document.getElementById("modalReserva").style.display = "flex";
 }
 
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(reservas => {
             const contenedor = document.getElementById("contenedorReservas");
             
-            contenedor.innerHTML = ""; // limpiar mensaje de ejemplo
+            contenedor.innerHTML = ""; 
 
             if (reservas.length === 0) {
                 contenedor.innerHTML = `

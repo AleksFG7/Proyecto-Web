@@ -26,7 +26,7 @@ header {
     font-size: 14px;
 }
 
-
+/*menu desplegable*/
 .menu-icon {
     position: absolute;
     right: 20px;
@@ -94,9 +94,7 @@ body {
     margin-top: 10px;
 }
 
-/* ===========================================
-      POPUP LOGIN/REGISTRO - ESTILO OSCURO
-   =========================================== */
+/*Popup LOGIN/REGISTRO*/
 
 .form-popup {
     position: fixed;
@@ -104,16 +102,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.65); /* Fondo oscuro transparente */
+    background: rgba(0,0,0,0.65); 
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(8px); /* Difuminado elegante */
+    backdrop-filter: blur(8px); 
     z-index: 5000;
 }
 
 .form-box {
-    background: #111; /* Fondo negro */
+    background: #111; 
     width: 380px;
     max-width: 90%;
     padding: 30px;
@@ -124,7 +122,7 @@ body {
     text-align: center;
 }
 
-/* Animación suave */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px) scale(0.95); }
     to { opacity: 1; transform: translateY(0) scale(1); }
@@ -136,7 +134,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Inputs */
+/*Inputs*/
 #form-content label {
     color: #ddd;
     font-weight: 600;
@@ -158,7 +156,7 @@ body {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
-    background: #8b5bff; /* Morado suave */
+    background: #8b5bff; 
     color: #fff;
     font-size: 1.1rem;
     border: none;
@@ -225,7 +223,7 @@ body {
 }
 
 
-/* -------- Logo AURA Tours -------- */
+/* Logo AURA Tours */
 .logo {
     position: absolute;
     left: 40px;
@@ -234,7 +232,7 @@ body {
 }
 
 .logo img {
-    height: 45px; /* ajusta según el tamaño de tu logo */
+    height: 45px; 
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -243,7 +241,7 @@ body {
     transform: scale(1.05);
 }
 
-/* -------- Página de concierto -------- */
+/* Página de conciertos */
 .concierto-detalle {
     max-width: 800px;
     margin: 120px auto 60px;
@@ -314,7 +312,7 @@ footer {
     margin-top: 60px;
 }
 
-/*Modo oscuro*/
+/*para modo oscuro*/
 
 body {
     background-color: #000; 
@@ -415,17 +413,17 @@ footer {
     color: #aaa;
 }
 
-/* -------- Títulos de los conciertos -------- */
+/*Títulos de los conciertos */
 .concierto-detalle h1 {
-    font-size: 3rem;        /* tamaño más grande */
-    color: #fff;            /* texto blanco */
-    font-weight: 700;       /* más grueso */
-    letter-spacing: 1px;    /* ligera separación entre letras */
-    text-transform: uppercase; /* todo en mayúsculas (opcional) */
+    font-size: 3rem;        
+    color: #fff;           
+    font-weight: 700;       
+    letter-spacing: 1px;    
+    text-transform: uppercase;
     margin-top: 30px;
 }
 
-/* -------- Estilo general blanco -------- */
+/*  Estilo general blanco*/
 body, 
 .concierto-detalle, 
 .concierto-detalle p, 
@@ -439,7 +437,7 @@ header,
     color: #fff !important;
 }
 
-/* -------- Título principal con brillo -------- */
+/*titulo principal con brillo */
 .concierto-detalle h1 {
     font-size: 3.2rem;
     color: #fff;
@@ -455,14 +453,14 @@ header,
     text-shadow: 0 0 12px #00ffff, 0 0 30px #00bfff, 0 0 60px #00aaff;
 }
 
-/* -------- Descripción y texto -------- */
+/* Descripción y texto */
 .descripcion, 
 .detalles, 
 footer {
     color: #fff;
 }
 
-/* -------- Botón de reservar -------- */
+/* Botón de reservar */
 .boton-reservar {
     background-color: #00bfff;
     color: #000;
@@ -475,7 +473,8 @@ footer {
     background-color: #00a2d6;
     box-shadow: 0 0 20px rgba(0,191,255,0.8);
 }
-/* -------- HERO PRINCIPAL -------- */
+
+/*Hero principal */
 .hero {
     position: relative;
     width: 100%;
@@ -499,8 +498,6 @@ footer {
     text-align: center;
     overflow: hidden;
 }
-
-
 
 .overlay {
     position: absolute;
@@ -540,14 +537,12 @@ footer {
     color: #ddd;
 }
 
-
-/* Asegura que las imágenes no sean afectadas por el overlay */
+/*para que las imágenes no se afecten por el overlay */
 .hero-right {
     position: relative;
-    z-index: 3; /* arriba del overlay */
+    z-index: 3; 
 }
 
-/* Lado derecho */
 .hero-right img {
     width: 230px;
     height: 430px;
@@ -582,8 +577,9 @@ footer {
     color: #fff;
 }
 
+/*estilo para dtmf tour*/
 .titulo-dtmf {
-    color: #ffd700; /* dorado */
+    color: #ffd700; 
     text-shadow: 0 0 15px #ffd700, 0 0 35px #ffcc00, 0 0 55px #ffaa00;
     font-size: 3.8rem;
     font-weight: 900;
@@ -595,7 +591,6 @@ footer {
 .titulo-dtmf:hover {
     text-shadow: 0 0 25px #ffee58, 0 0 45px #ffca28, 0 0 80px #ffa000;
 }
-
 
 .boton-reservar {
     background-color: #ffd700;
@@ -654,7 +649,6 @@ footer {
     text-align: center;
 }
 
-
 @media (max-width: 768px) {
     .frase-contenido {
         flex-direction: column;
@@ -670,8 +664,9 @@ footer {
     }
 }
 
+/*estilo para alucines*/
 .titulo-alucines {
-    color: #d39bff; /* Lila brillante */
+    color: #d39bff; 
     text-shadow: 0 0 15px #d39bff, 0 0 35px #b366ff, 0 0 55px #9b4dff;
     font-size: 3.5rem;
     font-weight: 900;
@@ -696,7 +691,6 @@ footer {
     box-shadow: 0 0 30px rgba(211, 155, 255, 0.9);
 }
 
-
 .frase-alucines {
     background-color: #1a001f;
     border: 1px solid #d39bff;
@@ -709,9 +703,9 @@ footer {
     font-size: 1.3rem;
 }
 
-
+/*estilo para eras tour*/
 .titulo-eras {
-    color: #ffb6c1; /* Rosa pastel */
+    color: #ffb6c1; 
     text-shadow: 0 0 15px #ffb6c1, 0 0 35px #ff69b4, 0 0 55px #ff1493;
     font-size: 3.5rem;
     font-weight: 900;
@@ -724,7 +718,6 @@ footer {
     text-shadow: 0 0 25px #ffcce0, 0 0 45px #ff80bf, 0 0 80px #ff1493;
 }
 
-
 .boton-reservar {
     background-color: #ffb6c1;
     color: #000;
@@ -735,7 +728,6 @@ footer {
     background-color: #ff80bf;
     box-shadow: 0 0 30px rgba(255, 182, 193, 0.9);
 }
-
 
 .frase-eras {
     background-color: #1a0011;
@@ -749,9 +741,9 @@ footer {
     font-size: 1.3rem;
 }
 
-
+/*estilo para bite me tour*/
 .titulo-biteme {
-    color: #ff4d6d; /* Rosa fuerte */
+    color: #ff4d6d; 
     text-shadow: 0 0 15px #ff4d6d, 0 0 35px #c9184a, 0 0 55px #800f2f;
     font-size: 3.5rem;
     font-weight: 900;
@@ -763,7 +755,6 @@ footer {
 .titulo-biteme:hover {
     text-shadow: 0 0 25px #ff758f, 0 0 45px #ff4d6d, 0 0 80px #c9184a;
 }
-
 
 .frase-biteme {
     background-color: #1a0008;
@@ -777,7 +768,7 @@ footer {
     font-size: 1.3rem;
 }
 
-
+/*estilo para guts tour*/
 .titulo-guts {
     color: #a855f7;
     text-shadow: 0 0 15px #a855f7, 0 0 35px #7e22ce, 0 0 55px #5b21b6;
@@ -792,7 +783,6 @@ footer {
     text-shadow: 0 0 25px #c084fc, 0 0 45px #a855f7, 0 0 80px #7e22ce;
 }
 
-
 .frase-guts {
     background-color: #0a0012;
     border: 1px solid #a855f7;
@@ -805,7 +795,7 @@ footer {
     font-size: 1.3rem;
 }
 
-
+/*estilo para tsou tour*/
 .titulo-secret {
     color: #ffd84d;
     text-shadow: 0 0 15px #ffd84d, 0 0 35px #ffb300, 0 0 55px #ffcc00;
@@ -819,7 +809,6 @@ footer {
 .titulo-secret:hover {
     text-shadow: 0 0 25px #fff176, 0 0 45px #ffd54f, 0 0 80px #ffb300;
 }
-
 
 .frase-secret {
     background-color: #1f1500;
@@ -842,9 +831,9 @@ body {
     padding: 0;
 }
 
-
+/*estilo para sns tour*/
 .titulo-short {
-    color: #ffb6d9; /* Rosa pastel brillante */
+    color: #ffb6d9; 
     text-shadow: 0 0 15px #ffb6d9, 0 0 35px #ff80bf, 0 0 55px #ff4da6;
     font-size: 3.5rem;
     font-weight: 900;
@@ -869,7 +858,6 @@ body {
     box-shadow: 0 0 30px rgba(255, 170, 220, 0.9);
 }
 
-
 .frase-short {
     background-color: #1a0010;
     border: 1px solid #ff99cc;
@@ -882,10 +870,10 @@ body {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para Billie Eilish -------- */
+/*estilo para hmhas tour*/
 
 .titulo-billie {
-    color: #6ec9c5; /* verde agua suave */
+    color: #6ec9c5; 
     text-shadow: 0 0 12px #6ec9c5, 0 0 28px #4ea6a3, 0 0 45px #2e6f6d;
     font-size: 3.5rem;
     font-weight: 900;
@@ -898,7 +886,6 @@ body {
     text-shadow: 0 0 22px #9ff0eb, 0 0 40px #6ec9c5, 0 0 70px #2e6f6d;
 }
 
-/* Frase personalizada */
 .frase-billie {
     background-color: #051414;
     border: 1px solid #6ec9c5;
@@ -911,10 +898,10 @@ body {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para Katy Perry -------- */
+/*estilo para katy perry*/
 
 .titulo-katy {
-    color: #ff71c6; /* rosa pop */
+    color: #ff71c6; 
     text-shadow: 0 0 15px #ff71c6, 0 0 35px #ff3ea3, 0 0 55px #d90079;
     font-size: 3.5rem;
     font-weight: 900;
@@ -927,7 +914,6 @@ body {
     text-shadow: 0 0 25px #ffa1dd, 0 0 45px #ff5ebd, 0 0 70px #d90079;
 }
 
-/* Frase personalizada */
 .frase-katy {
     background-color: #210016;
     border: 1px solid #ff71c6;
@@ -940,9 +926,9 @@ body {
     font-size: 1.3rem;
 }
 
-/* -------- Estilo especial para Cosa Nuestra Tour (Rauw Alejandro) -------- */
+/* estilo para cosa nuestra tour*/
 .titulo-rauw {
-    color: #4db8ff; /* Azul eléctrico */
+    color: #4db8ff; 
     text-shadow: 0 0 15px #4db8ff, 0 0 35px #1e90ff, 0 0 55px #0066cc;
     font-size: 3.6rem;
     font-weight: 900;
@@ -955,7 +941,6 @@ body {
     text-shadow: 0 0 25px #80d4ff, 0 0 45px #4db8ff, 0 0 80px #1e90ff;
 }
 
-/* Frase */
 .frase-rauw {
     background-color: #001726;
     border: 1px solid #4db8ff;
@@ -982,7 +967,7 @@ body {
     z-index: 1000;
 }
 
-/* -------------------- SECCIÓN VIAJES -------------------- */
+/*  SECCIÓN VIAJES  */
 
 .viajes-section {
     padding: 50px 20px;
@@ -1032,9 +1017,7 @@ body {
     box-shadow: 0 0 25px rgba(255,255,255,0.15);
 }
 
-/* ---------------------------------------------------------
-   ESTILOS PARA LAS PÁGINAS DE VIAJES
---------------------------------------------------------- */
+/* Estilos para las paginas de viajes*/
 
 .viaje-contenedor {
     margin-top: 140px;
@@ -1064,7 +1047,7 @@ body {
     padding: 10px;
 }
 
-/* Título elegante estilo “viaje”, suave y no exagerado */
+/* Titulo para viaje */
 .titulo-viaje {
     font-size: 2.8rem;
     font-weight: 800;
@@ -1105,7 +1088,7 @@ body {
     box-shadow: 0 0 25px rgba(255, 79, 181, 0.7);
 }
 
-/* ---------- MIS RESERVAS ---------- */
+/* pagina mis reservas*/
 
 .reservas-section {
     padding: 80px 10%;
@@ -1155,7 +1138,7 @@ body {
     text-align: center;
 }
 
-/* ----- FOOTER ----- */
+/* FOOTER */
 
 .footer {
     background: #0d0d0d;
@@ -1262,7 +1245,8 @@ body {
     color: #777;
     font-size: 14px;
 }
-/* GALERÍA EN PÁGINA DE VIAJE */
+
+/* galeria para las paginas de viajes */
 .galeria-viaje-detalle {
     padding: 60px 8%;
     text-align: center;
@@ -1315,7 +1299,7 @@ body {
     border-radius: 4px;
 }
 
-/* ESTILO PARA Ventana de verificación */
+/* Estilo para ventana de verificación */
 .ventana {
     position: fixed;
     top: 50%;
@@ -1424,7 +1408,7 @@ body {
     transition:.25s;
 }
 
-/* Botón confirmar suave, morado */
+/* Botón p/confirmar*/
 #btnConfirmar {
     background:#8a4cd6;
     color:white;
@@ -1433,7 +1417,7 @@ body {
     background:#a674e9;
 }
 
-/* boton Cancelar */
+/* boton p/Cancelar */
 #modalReserva button:last-child {
     background:#3a3a3a;
     color:#ffffff;
