@@ -17,16 +17,19 @@
     </div>
 
     <ul class="elementosheader">
-        <li><a href="/index.html#conciertos">CONCIERTOS</a></li>
-        <li><a href="/index.html#viajes">VIAJES</a></li>
-        <li><a href="/index.html#reservar">RESERVAR</a></li>
+        <li><a href="../index.html#inicio">INICIO</a></li>
+        <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+        <li><a href="../index.html#viajes">VIAJES</a></li>
+        <li><a href="../index.html#conciertos">EVENTOS</a></li>
+        <li><a href="../index.html#contacto">CONTACTO</a></li>
     </ul>
 
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <div class="menu-desplegable" id="menu">
         <a href="#" onclick="mostrarFormulario('login')">Iniciar sesión</a>
         <a href="#" onclick="mostrarFormulario('registro')">Registrarse</a>
-        <a href="#">Mis reservas</a>
+        <a href="../reservas/mis_reservas.html" onclick="mostrarFormulario('login')">Mis reservas</a>
+        <a href="#" onclick="cerrarSesion()" class="cerrar-sesion">Cerrar sesión</a>
     </div>
 </header>
 
@@ -68,9 +71,53 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 AURA Tours — Todos los derechos reservados.</p>
+<footer id="contacto" class="footer">
+    <div class="footer-contenedor">
+
+        <!-- Columna 1: Logo e información -->
+        <div class="footer-col">
+            <img src="/imagenes/logo.png" class="footer-logo" alt="Logo Aura Tours">
+
+            <p class="footer-icon"><i class="fas fa-phone"></i> +52 2298521704</p>
+            <p class="footer-icon"><i class="fas fa-envelope"></i> auratoursitv@gmail.com</p>
+            <p class="footer-icon"><i class="fas fa-map-marker-alt"></i> Veracruz, Ver</p>
+        </div>
+
+        <!-- Columna 2: Enlaces -->
+        <div class="footer-col">
+            <h4>ENLACES</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#viajes">Viajes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Redes sociales -->
+        <div class="footer-col">
+            <h4>REDES SOCIALES</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Columna 4: Newsletter -->
+        <div class="footer-col">
+            <h4>WEEKLY NEWSLETTER</h4>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2025 AURA Tours — Todos los derechos reservados.</p>
 </footer>
 
 

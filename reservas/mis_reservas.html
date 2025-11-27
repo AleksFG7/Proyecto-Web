@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother Mother Tour | AURA Tours</title>
+    <title>Mis Reservas | AURA Tours</title>
     <link rel="stylesheet" href="../Styles.css">
-    <script src="comportamiento.js"></script>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
     <div class="logo">
-        <a href="/index.html">
-           <img src="../imagenes/logo.png" alt="AURA Tours Logo">
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="AURA Tours Logo">
         </a>
     </div>
 
@@ -34,40 +33,20 @@
     </div>
 </header>
 
-<!-- HERO DEL CONCIERTO -->
-<section class="hero hero-concierto" style="background-image: url('../imagenes/mothermother.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1 class="titulo-mother">Mother Mother</h1>
-        <p>Mother Mother llega con su show más rockero, explosivo y lleno de energía. Vive la experiencia con AURA Tours.</p>
-    </div>
-</section>
+<!-- CONTENIDO PRINCIPAL -->
+<section class="reservas-section">
+    <h1 class="titulo-reservas">MIS RESERVAS</h1>
 
-<!-- DETALLES DEL CONCIERTO -->
-<main class="concierto-detalle">
-    <p class="descripcion">
-        <strong>Mother Mother</strong> trae su energía única con el <em>Hayloft</em>, un espectáculo lleno de baile, visuales locos y ritmos de rock y pop.  
-        AURA Tours te ofrece la experiencia completa para disfrutar esta noche inolvidable.
+    <p class="texto-reservas">
+        Aquí aparecerán todas tus reservas realizadas en AURA Tours.
     </p>
 
-    <div class="detalles">
-        <p><strong>📅 Fecha:</strong> 18 de octubre de 2026</p>
-        <p><strong>📍 Lugar:</strong> Arena Monterrey, Monterrey, México</p>
-        <p><strong>💸 Precio desde:</strong> $9,500 MXN</p>
-    </div>
-
-    <button class="boton-reservar" onclick="confirmarReserva(11)">Reservar ahora</button>
-</main>
-
-<!-- SECCIÓN EXTRA: imagen + frase -->
-<section class="frase-section">
-    <div class="frase-contenido">
-        <div class="frase-imagen">
-            <img src="../imagenes/mothermother2.jpg" alt="Mother Mother en concierto">
-        </div>
-
-        <div class="frase-texto frase-mother">
-            <p>“Hoy jugaré a ser Dios”</p>
+    <!-- div para llenar reservas -->
+    <div id="contenedorReservas" class="lista-reservas">
+        <!-- Ejemplo temporal (se borra solo cuando haya datos reales) -->
+        <div class="reserva-card ejemplo">
+            <h3>Sin reservas aún</h3>
+            <p>Cuando reserves un viaje o concierto, aparecerá aquí.</p>
         </div>
     </div>
 </section>
@@ -121,14 +100,6 @@
     <p class="footer-bottom">© 2025 AURA Tours — Todos los derechos reservados.</p>
 </footer>
 
-<div id="modalReserva">
-    <div class="contenido-modal">
-        <p>¿Estás seguro que deseas reservar este paquete?</p>
-        <button id="btnConfirmar" class="btn-reserva">Reservar</button>
-        <button onclick="cerrarModal()" class="btn-cancelar">Cancelar</button>
-    </div>
-</div>
-
-<script src="/comportamiento.js"></script>
+<script src="../comportamiento.js"></script>
 </body>
 </html>
